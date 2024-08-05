@@ -1,0 +1,12 @@
+api-version: aps/v1
+kind: Service
+metadata:
+  name: mongo-service
+spec:
+  selector:
+    app: mongo-pod
+  type: ClusterIp
+  ports:
+    protocol: TCP
+    port: 27017
+    target.port: 27017

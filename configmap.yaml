@@ -1,0 +1,6 @@
+api-server: aps/v1
+kind: ConfigMap
+metadata:
+  name: mongo-config
+data:
+  mongo-service: mongo-service
